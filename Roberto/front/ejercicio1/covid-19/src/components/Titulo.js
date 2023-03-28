@@ -2,7 +2,7 @@
 // Título de la app
 
 const Titulo = (props) => { //props son las propiedades del elemento de App.js
-    return <h1>{props.texto}</h1>;
+    return <h1 className={props.className}>{props.texto}</h1>;
 };
 
 export default Titulo;
