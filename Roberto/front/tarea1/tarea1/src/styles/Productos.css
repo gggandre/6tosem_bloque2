@@ -1,3 +1,5 @@
+/*Gilberto André García Gaytán A01753176
+Hoja de estilos productos y estrellas */ 
 .producto {
     margin: 20px;
     padding: 20px;
@@ -23,4 +25,65 @@
   .producto li {
     margin-bottom: 5px;
   }
-  
+
+  .producto img {
+    width: 300px;
+    height: 400px;
+  }
+/* Estilos para las estrellas de valoración */
+.rater {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rater-star {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rater-star.rater-star-empty:before,
+.rater-star.rater-star-empty:hover:before {
+  content: "\2606";
+}
+
+.rater-star.rater-star-selected:before,
+.rater-star.rater-star-selected:hover:before {
+  content: "\2605";
+}
+
+.rater-star.rater-star-hover:before {
+  content: "\2605";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  width: 0;
+  transition: width 0.25s;
+}
+.estrellas {
+  display: inline-flex;
+}
+
+.estrella,
+.estrella-llena {
+  cursor: pointer;
+  font-size: 30px;
+  color: #ddd;
+}
+
+.estrella-llena {
+  color: gold;
+}
