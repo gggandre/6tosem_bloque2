@@ -12,7 +12,7 @@ import mitsuri from "../images/mitsuri.jpg";
 function Producto2({ imagen }) {
   const [valoracion, setValoracion] = useState(0);
 
-  const producto2 = {
+  const props = {
     titulo: "Funko Pop! Animation: Demon Slayer - Mitsuri Kanroji",
     precio: "$369.00",
     descripcion:
@@ -32,10 +32,10 @@ function Producto2({ imagen }) {
     <div className="producto">
       <img src={mitsuri} alt="mitsuri" />
       <h1>
-        <strong>{producto2.titulo}</strong>
+        <strong>{props.titulo}</strong>
       </h1>
       <p>
-        <strong>{producto2.precio}</strong>
+        <strong>{props.precio}</strong>
           </p>
           <li>Valoración:</li>
           <div className="estrellas">
@@ -49,13 +49,13 @@ function Producto2({ imagen }) {
             </span>
           ))}
         </div>
-      <p>{producto2.descripcion}</p>
+      <p>{props.descripcion}</p>
       <ul>
-        <li>Tema: {producto2.tema}</li>
-        <li>Marca: {producto2.marca}</li>
-        <li>Material: {producto2.material}</li>
-        <li>Dimensiones del producto: {producto2.dimensiones}</li>
-        <li>Personaje de dibujos animados: {producto2.personaje}</li>
+        <li>Tema: {props.tema}</li>
+        <li>Marca: {props.marca}</li>
+        <li>Material: {props.material}</li>
+        <li>Dimensiones del producto: {props.dimensiones}</li>
+        <li>Personaje de dibujos animados: {props.personaje}</li>
       </ul>
     </div>
   );

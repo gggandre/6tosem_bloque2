@@ -11,7 +11,7 @@ import tokito from "../images/tokito.jpg";
 function Producto1({ imagen }) {
   const [valoracion, setValoracion] = useState(0);
 
-  const producto1 = {
+  const props = {
     titulo: "Funko Muichiro Tokito",
     precio: "$639.00",
     descripcion:
@@ -31,10 +31,10 @@ function Producto1({ imagen }) {
     <div className="producto">
       <img src={tokito} alt="tokito" />
       <h1>
-        <strong>{producto1.titulo}</strong>
+        <strong>{props.titulo}</strong>
       </h1>
       <p>
-        <strong>{producto1.precio}</strong>
+        <strong>{props.precio}</strong>
           </p>
           <li>Valoración:</li>
           <div className="estrellas">
@@ -48,13 +48,13 @@ function Producto1({ imagen }) {
             </span>
           ))}
         </div>
-      <p>{producto1.descripcion}</p>
+      <p>{props.descripcion}</p>
       <ul>
-        <li>Tema: {producto1.tema}</li>
-        <li>Marca: {producto1.marca}</li>
-        <li>Material: {producto1.material}</li>
-        <li>Dimensiones del producto: {producto1.dimensiones}</li>
-        <li>Personaje de dibujos animados: {producto1.personaje}</li>
+        <li>Tema: {props.tema}</li>
+        <li>Marca: {props.marca}</li>
+        <li>Material: {props.material}</li>
+        <li>Dimensiones del producto: {props.dimensiones}</li>
+        <li>Personaje de dibujos animados: {props.personaje}</li>
       </ul>
     </div>
   );

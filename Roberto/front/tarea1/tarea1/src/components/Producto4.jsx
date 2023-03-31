@@ -12,7 +12,7 @@ import sanemi from "../images/sanemi.jpg";
 function Producto4({ imagen }) {
   const [valoracion, setValoracion] = useState(0);
 
-  const producto4 = {
+  const props = {
     titulo: "Funko Pop Sanemi Shinazugawa 1253 Demon Slayer",
     precio: "$289.00",
     descripcion:
@@ -32,10 +32,10 @@ function Producto4({ imagen }) {
     <div className="producto">
       <img src={sanemi} alt="sanemi" />
       <h1>
-        <strong>{producto4.titulo}</strong>
+        <strong>{props.titulo}</strong>
       </h1>
       <p>
-        <strong>{producto4.precio}</strong>
+        <strong>{props.precio}</strong>
           </p>
           <li>Valoración:</li>
           <div className="estrellas">
@@ -49,13 +49,13 @@ function Producto4({ imagen }) {
             </span>
           ))}
         </div>
-      <p>{producto4.descripcion}</p>
+      <p>{props.descripcion}</p>
       <ul>
-        <li>Tema: {producto4.tema}</li>
-        <li>Marca: {producto4.marca}</li>
-        <li>Material: {producto4.material}</li>
-        <li>Dimensiones del producto: {producto4.dimensiones}</li>
-        <li>Personaje de dibujos animados: {producto4.personaje}</li>
+        <li>Tema: {props.tema}</li>
+        <li>Marca: {props.marca}</li>
+        <li>Material: {props.material}</li>
+        <li>Dimensiones del producto: {props.dimensiones}</li>
+        <li>Personaje de dibujos animados: {props.personaje}</li>
       </ul>
     </div>
   );
