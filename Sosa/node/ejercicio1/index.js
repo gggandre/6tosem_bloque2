@@ -5,6 +5,7 @@ const personaRoutes = require('./routes/persona'); //importar las rutas de perso
 //Middleware
 app.use(express.json()); //permite que el servidor pueda entender los datos que se envían en formato JSON
 app.use('/persona', personaRoutes); //definir el prefijo de las rutas de persona (ejemplo: /persona/altaPersona)
+app.use('/listapersona', personaRoutes); //definir el prefijo de las rutas de persona (ejemplo: /persona/altaPersona)
 //Definir las rutas
 app.get('/test', (request, response) => {
     console.log('Servicio de prueba');
