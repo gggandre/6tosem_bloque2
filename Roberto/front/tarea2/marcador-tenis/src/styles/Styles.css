@@ -1,0 +1,54 @@
+
+
+.puntos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; /* Alinear los elementos hijos en la parte inferior del contenedor */
+  position: relative;
+  z-index: 2;
+}
+
+.jugador {
+background-image: url('../img/tenis.gif');
+background-size: cover; /* ajustar tamaño de la imagen /
+background-repeat: no-repeat;
+width: 50%;
+height: 400px; / ajustar altura del contenedor */
+position: relative;
+z-index: 2;
+}
+
+
+.Botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  position: fixed; /* cambiar posición a fixed */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3; /* Establecer un valor mayor que el de puntos-container, puntos y jugador */
+}
+
+.Botones button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #f7d154;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+}
+
+.Botones button:hover {
+  background-color: #b4e051;
+}
+
+.Botones button:active {
+  transform: scale(0.95);
+  background-color: #e63946;
+  color: #fff;
+  border-color: #000;
+}

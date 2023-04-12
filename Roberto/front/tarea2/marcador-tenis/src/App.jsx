@@ -1,36 +1,20 @@
-import { useState } from "react";
+//A01753176 - Gilberto André García Gaytán
+/**
+ * The function returns a React component that renders the PuntosySet component within a div with the
+ * class name "App".
+ * @returns The `App` component is returning a `div` element with a class name of "App" and rendering
+ * the `PuntosySet` component.
+ */
 import './styles/App.css';
-import Titulo from './components/Titulo';
-import Puntos from './components/Puntos';
-import Botones from './components/Botones';
+import PuntosySet from './components/PuntosySet';
+import Menu from './components/Menu';
 
 function App() {
 
-  const [puntosA, setPuntosA] = useState(0);
-  const [puntosB, setPuntosB] = useState(0);
-  /* Handlers para los botones */
-  const onClickHandlerA = (event) => {
-    setPuntosA(puntosA + 1);
-  }
-
-  const onClickHandlerB = (event) => {
-    setPuntosB(puntosB + 1);
-  }
-
-  const onClickHandlerC = (event) => {
-    setPuntosA(0); 
-    setPuntosB(0);
-  }
-
   return (
     <div className="App">
-      <Titulo texto="Jugador A" />
-      <Puntos valor={puntosA} />
-      <Titulo texto="Jugador B" />
-      <Puntos valor={puntosB} />
-      <Botones texto="Punto de A" onClick={onClickHandlerA}/>
-      <Botones texto="Punto de B" onClick={onClickHandlerB}/>
-      <Botones texto="Reiniciar" onClick={onClickHandlerC}/>
+      <PuntosySet />
+      <Menu/>
     </div>
   );
 }

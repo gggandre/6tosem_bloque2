@@ -1,0 +1,31 @@
+.announcement-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .announcement-container h3 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .announcement-container button {
+    font-size: 2rem;
+    background-color: green;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    cursor: pointer;
+  }
+  
+  
