@@ -1,0 +1,96 @@
+{
+    "_id" : ObjectId("64408807e33127e1c0be3a07"),
+    "name" : "John Doe",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("64408807e33127e1c0be3a08"),
+    "name" : "Jane Smith",
+    "phone_number" : "555-5678",
+    "address" : "456 Oak St"
+}
+{
+    "_id" : ObjectId("64408807e33127e1c0be3a09"),
+    "name" : "Bob Johnson",
+    "phone_number" : "555-4321",
+    "address" : "789 Elm St"
+}
+{
+    "_id" : ObjectId("6440881ce33127e1c0be3a0a"),
+    "name" : "John Doe",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440881ce33127e1c0be3a0b"),
+    "name" : "Jane Smith",
+    "phone_number" : "555-5678",
+    "address" : "456 Oak St"
+}
+{
+    "_id" : ObjectId("6440881ce33127e1c0be3a0c"),
+    "name" : "Bob Johnson",
+    "phone_number" : "555-4321",
+    "address" : "789 Elm St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a17"),
+    "name" : "Owner 0",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a18"),
+    "name" : "Owner 1",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a19"),
+    "name" : "Owner 2",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a1a"),
+    "name" : "Owner 3",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a1b"),
+    "name" : "Owner 4",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a1c"),
+    "name" : "Owner 5",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a1d"),
+    "name" : "Owner 6",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a1e"),
+    "name" : "Owner 7",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a1f"),
+    "name" : "Owner 8",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a20"),
+    "name" : "Owner 9",
+    "phone_number" : "555-1234",
+    "address" : "123 Main St"
+}

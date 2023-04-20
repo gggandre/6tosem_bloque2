@@ -1,0 +1,375 @@
+{
+    "_id" : ObjectId("644087f7e33127e1c0be3a04"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC123",
+    "total_amount" : NumberInt(20000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("644087f7e33127e1c0be3a05"),
+    "vehicle_type" : "SUV",
+    "plate_number" : "DEF456",
+    "total_amount" : NumberInt(30000),
+    "monthly_payments" : NumberInt(24),
+    "sale_date" : "2023-04-16",
+    "owner_data" : {
+        "name" : "Jane Smith",
+        "phone_number" : "555-5678",
+        "address" : "456 Oak St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(1250),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(1250),
+            "payment_date" : "2023-06-01",
+            "status" : "delayed"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("644087f7e33127e1c0be3a06"),
+    "vehicle_type" : "hatchback",
+    "plate_number" : "GHI789",
+    "total_amount" : NumberInt(15000),
+    "monthly_payments" : NumberInt(6),
+    "sale_date" : "2023-04-18",
+    "owner_data" : {
+        "name" : "Bob Johnson",
+        "phone_number" : "555-4321",
+        "address" : "789 Elm St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2500),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2500),
+            "payment_date" : "2023-06-01",
+            "status" : "paid"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a0d"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC0",
+    "total_amount" : NumberInt(20000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a0e"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC1",
+    "total_amount" : NumberInt(21000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a0f"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC2",
+    "total_amount" : NumberInt(22000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a10"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC3",
+    "total_amount" : NumberInt(23000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a11"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC4",
+    "total_amount" : NumberInt(24000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a12"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC5",
+    "total_amount" : NumberInt(25000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a13"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC6",
+    "total_amount" : NumberInt(26000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a14"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC7",
+    "total_amount" : NumberInt(27000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a15"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC8",
+    "total_amount" : NumberInt(28000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("6440895be33127e1c0be3a16"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "ABC9",
+    "total_amount" : NumberInt(29000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-17",
+    "owner_data" : {
+        "name" : "John Doe",
+        "phone_number" : "555-1234",
+        "address" : "123 Main St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(2000),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("64408ab0e33127e1c0be3a21"),
+    "vehicle_type" : "compact",
+    "plate_number" : "GHI789",
+    "total_amount" : NumberInt(18000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-19",
+    "owner_data" : {
+        "name" : "Sarah Lee",
+        "phone_number" : "555-4321",
+        "address" : "789 Elm St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(1500),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(1500),
+            "payment_date" : "2023-06-01",
+            "status" : "pending"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("64408b1fe33127e1c0be3a22"),
+    "vehicle_type" : "sedan",
+    "plate_number" : "GHI789",
+    "total_amount" : NumberInt(15000),
+    "monthly_payments" : NumberInt(12),
+    "sale_date" : "2023-04-19",
+    "owner_data" : {
+        "name" : "Maria Garcia",
+        "phone_number" : "555-5555",
+        "address" : "789 Pine St"
+    },
+    "payment_records" : [
+        {
+            "amount" : NumberInt(1250),
+            "payment_date" : "2023-05-01",
+            "status" : "paid"
+        },
+        {
+            "amount" : NumberInt(1250),
+            "payment_date" : "2023-06-01",
+            "status" : "paid"
+        }
+    ]
+}

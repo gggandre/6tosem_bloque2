@@ -1,0 +1,65 @@
+{
+    "_id" : ObjectId("64408623b8eec855539467f7"),
+    "sales" : [
+        {
+            "vehicle_type" : "sedan",
+            "plate_number" : "ABC123",
+            "total_amount" : NumberInt(20000),
+            "monthly_payments" : NumberInt(12),
+            "sale_date" : "2023-04-17",
+            "owner_data" : {
+                "name" : "John Doe",
+                "phone_number" : "555-1234",
+                "address" : "123 Main St"
+            },
+            "payment_records" : [
+                {
+                    "amount" : NumberInt(2000),
+                    "payment_date" : "2023-05-01",
+                    "status" : "paid"
+                },
+                {
+                    "amount" : NumberInt(2000),
+                    "payment_date" : "2023-06-01",
+                    "status" : "pending"
+                }
+            ]
+        },
+        {
+            "vehicle_type" : "SUV",
+            "plate_number" : "DEF456",
+            "total_amount" : NumberInt(30000),
+            "monthly_payments" : NumberInt(24),
+            "sale_date" : "2023-04-16",
+            "owner_data" : {
+                "name" : "Jane Smith",
+                "phone_number" : "555-5678",
+                "address" : "456 Oak St"
+            },
+            "payment_records" : [
+                {
+                    "amount" : NumberInt(1250),
+                    "payment_date" : "2023-05-01",
+                    "status" : "paid"
+                },
+                {
+                    "amount" : NumberInt(1250),
+                    "payment_date" : "2023-06-01",
+                    "status" : "delayed"
+                }
+            ]
+        }
+    ],
+    "owners" : [
+        {
+            "name" : "John Doe",
+            "phone_number" : "555-1234",
+            "address" : "123 Main St"
+        },
+        {
+            "name" : "Jane Smith",
+            "phone_number" : "555-5678",
+            "address" : "456 Oak St"
+        }
+    ]
+}

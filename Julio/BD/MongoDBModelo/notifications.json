@@ -1,0 +1,96 @@
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b097182d"),
+    "owner_id" : ObjectId("64408807e33127e1c0be3a07"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b097182e"),
+    "owner_id" : ObjectId("64408807e33127e1c0be3a08"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b097182f"),
+    "owner_id" : ObjectId("64408807e33127e1c0be3a09"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971830"),
+    "owner_id" : ObjectId("6440881ce33127e1c0be3a0a"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971831"),
+    "owner_id" : ObjectId("6440881ce33127e1c0be3a0b"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971832"),
+    "owner_id" : ObjectId("6440881ce33127e1c0be3a0c"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971833"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a17"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971834"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a18"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971835"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a19"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971836"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a1a"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971837"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a1b"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971838"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a1c"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b0971839"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a1d"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b097183a"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a1e"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b097183b"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a1f"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
+{
+    "_id" : ObjectId("64408ff5be4dcbc8b097183c"),
+    "owner_id" : ObjectId("6440895be33127e1c0be3a20"),
+    "notification_date" : "2023-06-02",
+    "message" : "Pago atrasado. Favor de hacer el pago de $2000."
+}
