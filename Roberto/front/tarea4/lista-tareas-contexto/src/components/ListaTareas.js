@@ -1,16 +1,19 @@
 import '../styles/ListaTareas.css';
-import { Fragment, useState } from 'react';
+import { Fragment, useContext, useState } from 'react';
 import CapturaTarea from './CapturaTarea';
 import Tarea from './Tarea';
+import { ContextoTareas } from '../App';
 
 
 const ListaTareas = (props) => {
     //Estado para las tareas (arrTareas)
-    const [arrTareas, setArrTareas] = useState([]);
-    
+    //const [arrTareas, setArrTareas] = useState([]);
+    //Contexto
+    const [arrTareas] = useContext(ContextoTareas);
+
     const agregarTarea = (tarea) => { 
         const nuevoArrTareas = [tarea, ...arrTareas];
-        setArrTareas(nuevoArrTareas);
+        //setArrTareas(nuevoArrTareas);
     };
 
     const completarTarea = (id) => { 
@@ -20,17 +23,17 @@ const ListaTareas = (props) => {
             }
             return tarea;
         });
-        setArrTareas(arrTareasNuevo); //
+        //setArrTareas(arrTareasNuevo); //
     };
 
     const eliminarTarea = (id) => {
         const arrTareasNuevo = arrTareas.filter((tarea) => tarea.id !== id);
-        setArrTareas(arrTareasNuevo);
+        //setArrTareas(arrTareasNuevo);
     };
 
     return (
         <Fragment>
-            <CapturaTarea onSubmit={agregarTarea} />
+            <CapturaTarea />
             <div className="lista-tareas">
                 {arrTareas.length === 0 && <h1 className='lista-tareas'>🧚No hay tareas, agrega una🧚</h1>}
                 {arrTareas.map((tarea)=>{
@@ -44,7 +47,7 @@ const ListaTareas = (props) => {
                     />
                 })}
             </div>
-        </Fragment>
+            </Fragment>
     );
 };
 

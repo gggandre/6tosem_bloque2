@@ -1,9 +1,12 @@
 import '../styles/CapturaTarea.css'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useRef } from 'react';
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
+import { ContextoTareas } from '../App';
 
 const CapturaTarea = (props) => {
+  // ACcede al contexto
+  const [arrTareas, setArrTareas] = useContext(ContextoTareas);
     
 //Contenido del input
 const [descripcionTarea, setDescripcionTarea] = useState('');
@@ -20,8 +23,13 @@ const [descripcionTarea, setDescripcionTarea] = useState('');
         texto: refInput.current.value,
         completada: false
       };
-    props.onSubmit(nuevaTarea);
-    };
+    //props.onSubmit(nuevaTarea)
+      const nuevoArrTareas = { nuevaTarea, ...arrTareas };
+      setArrTareas(nuevoArrTareas); //PENDIENTE
+      //arrTareas.push(nuevaTarea);
+      console.log(arrTareas);
+  };
+  
    
     return (
       <form className="tarea-forma" onSubmit={agregarTareaHandler}>
