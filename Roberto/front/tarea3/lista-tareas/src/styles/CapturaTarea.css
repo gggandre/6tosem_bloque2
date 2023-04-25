@@ -31,3 +31,11 @@
   color: white;
   text-transform: capitalize;
 }
+
+.tarea-boton:hover {
+  background-color: #002f0c;
+}
+
+.tarea-boton:active {
+  background-color: #006633;
+}
