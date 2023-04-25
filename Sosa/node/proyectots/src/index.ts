@@ -1,16 +1,16 @@
-import Server from './providers/Server';
+import Server from "./providers/Server";
 import express from 'express';
 import cors from 'cors';
-import UserController from './controllers/UserController';
+import UserController from "./controllers/UserController";
 
 const servidor = new Server({
-    port: 8080,
-    middlewares: [
+    port:8080,
+    middlewares:[
         express.json(),
-        express.urlencoded({ extended: true }),
+        express.urlencoded({extended:true}),
         cors()
     ],
-    controllers: [
+    controllers:[
         UserController.getInstance()
     ],
     env:'development'

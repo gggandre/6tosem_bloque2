@@ -1,19 +1,19 @@
 import express, {Request, Response} from 'express';
 import AbstractController from '../controllers/AbstractController';
-
+import db from '../models';
 class Server{
     //Atributos
     private app:express.Application;
     private port:number;
     private env:string;
 
-    //Metodos
+    //Métodos
     constructor(appInit:{port:number,env:string;middlewares:any[],controllers:AbstractController[]}){
         this.app=express();
         this.port=appInit.port;
         this.env=appInit.env; 
         this.loadMiddlewares(appInit.middlewares);  
-        this.loadControllers(appInit.controllers);
+        this.loadControllers(appInit.controllers);   
     }
 
     private loadMiddlewares(middlewares:any[]):void{
@@ -28,12 +28,12 @@ class Server{
         })
     }
 
-    public init(){
+    public async init() {
+        await db.sequelize.sync(); //await convierte la función en una promesa
         this.app.listen(this.port,()=>{
-            console.log(`Server:Running 🚀👻 @'http://localhost:${this.port}'`)
+            console.log(`Server:Running 🚀 @'http://localhost:${this.port}'`)
         })
     }
-
 
 }
 

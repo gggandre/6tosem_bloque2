@@ -6,22 +6,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const AbstractController_1 = __importDefault(require("./AbstractController"));
 class UserController extends AbstractController_1.default {
     static getInstance() {
-        //si existe la instancia la regresa
+        //si existe la instancia la regreso
         if (this.instance) {
             return this.instance;
         }
-        // Si no existe la instancia la crea
+        //si no exite la creo
         this.instance = new UserController('user');
         return this.instance;
     }
-    // Configurar las rutas de controlador
+    //Configurar las rutas del controlador
     initRoutes() {
         this.router.get("/readUsers", this.getReadUsers.bind(this));
         this.router.post("/createUser", this.postCreateUser.bind(this));
     }
-    // Los métodos asociados a las rutas
+    //Los métodos asociados a las rutas
     getReadUsers(req, res) {
-        res.status(200).send("Servicio en línea :)😄");
+        res.status(200).send("Servicio en línea  😄");
     }
     postCreateUser(req, res) {
         res.status(200).send("Registro exitoso");

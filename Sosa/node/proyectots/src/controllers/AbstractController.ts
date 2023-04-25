@@ -14,9 +14,8 @@ export default abstract class AbstractController{
     }
 
     protected constructor(prefix:string){
-        this._prefix = prefix;
+        this._prefix=prefix;
         this.initRoutes();
-        
         
     }
     //Inicializar las rutas
