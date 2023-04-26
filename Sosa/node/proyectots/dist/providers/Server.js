@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const models_1 = __importDefault(require("../models"));
 class Server {
-    //Métodos
+    //Metodos
     constructor(appInit) {
         this.app = (0, express_1.default)();
         this.port = appInit.port;
@@ -35,10 +35,12 @@ class Server {
     }
     init() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield models_1.default.sequelize.sync(); //await convierte la función en una promesa
+            yield models_1.default.sequelize.sync();
             this.app.listen(this.port, () => {
                 console.log(`Server:Running 🚀 @'http://localhost:${this.port}'`);
             });
+            //db.sequelize.sync()
+            //    .then()
         });
     }
 }

@@ -2,9 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRoles = void 0;
 const sequelize_1 = require("sequelize");
-//const {
-//  Model
-//} = require('sequelize');
 var UserRoles;
 (function (UserRoles) {
     UserRoles["ADMIN"] = "ADMIN";
@@ -19,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     User.init({
-        awsCofnitoId: {
+        awsCognitoId: {
             type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true
@@ -29,9 +26,9 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         role: {
-            type: DataTypes.ENUM,
-            defaultValue: UserRoles.CUSTOMER,
-            allowNull: false
+            type: DataTypes.STRING,
+            allowNull: false,
+            defaultValue: UserRoles.CUSTOMER
         },
         email: {
             type: DataTypes.STRING,

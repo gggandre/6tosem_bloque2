@@ -1,4 +1,5 @@
 'use strict';
+
 import fs from 'fs';
 import path from 'path';
 
@@ -9,7 +10,7 @@ import config from '../config/config';
 const db:any = {};
 
 let sequelize:any;
-if (env=='development') {
+if (env==='development') {
   sequelize = new Sequelize(
     config.development.database,
     config.development.username,
@@ -17,16 +18,13 @@ if (env=='development') {
     {
       dialect: config.development.dialect,
       host: config.development.host,
-      define: {
-        timestamps: false,
-        freezeTableName: true
+      define:{
+        timestamps:false,
+        freezeTableName:true
       }
     }
-    
   );
-} /*else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
-}*/
+} 
 
 fs
   .readdirSync(__dirname)
@@ -38,12 +36,12 @@ fs
       file.indexOf('.test.js') === -1
     );
   })
-  .forEach(file => { // Agregar todos los modelos al objeto de conexión
+  .forEach(file => { //Agregar todos los modelos al objeto de conexión
     const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
     db[model.name] = model;
   });
 
-Object.keys(db).forEach(modelName => { // establecer las relaciones entre tablas
+Object.keys(db).forEach(modelName => { //Establecer las relaciones entre tables
   if (db[modelName].associate) {
     db[modelName].associate(db);
   }

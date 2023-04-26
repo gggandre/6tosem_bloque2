@@ -11,7 +11,7 @@ const env = process.env.NODE_ENV || 'development';
 const config_1 = __importDefault(require("../config/config"));
 const db = {};
 let sequelize;
-if (env == 'development') {
+if (env === 'development') {
     sequelize = new Sequelize(config_1.default.development.database, config_1.default.development.username, config_1.default.development.password, {
         dialect: config_1.default.development.dialect,
         host: config_1.default.development.host,
@@ -20,9 +20,7 @@ if (env == 'development') {
             freezeTableName: true
         }
     });
-} /*else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
-}*/
+}
 fs_1.default
     .readdirSync(__dirname)
     .filter(file => {

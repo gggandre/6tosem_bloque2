@@ -1,13 +1,14 @@
 import express, {Request, Response} from 'express';
 import AbstractController from '../controllers/AbstractController';
 import db from '../models';
+
 class Server{
     //Atributos
     private app:express.Application;
     private port:number;
     private env:string;
 
-    //Métodos
+    //Metodos
     constructor(appInit:{port:number,env:string;middlewares:any[],controllers:AbstractController[]}){
         this.app=express();
         this.port=appInit.port;
@@ -28,11 +29,14 @@ class Server{
         })
     }
 
-    public async init() {
-        await db.sequelize.sync(); //await convierte la función en una promesa
+    public async init(){
+        await db.sequelize.sync();
         this.app.listen(this.port,()=>{
             console.log(`Server:Running 🚀 @'http://localhost:${this.port}'`)
         })
+
+        //db.sequelize.sync()
+        //    .then()
     }
 
 }
