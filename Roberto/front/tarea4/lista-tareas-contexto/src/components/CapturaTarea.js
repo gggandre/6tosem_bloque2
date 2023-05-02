@@ -1,50 +1,52 @@
-import '../styles/CapturaTarea.css'
-import { useContext, useState } from 'react';
-import { useRef } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-import { ContextoTareas } from '../App';
+/**
+ *
+ */
+
+import { useContext, useRef, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
+import "../styles/CapturaTarea.css";
+import { ContextoTareas } from "../App";
 
 const CapturaTarea = (props) => {
-  // ACcede al contexto
-  const [arrTareas, setArrTareas] = useContext(ContextoTareas);
-    
-//Contenido del input
-const [descripcionTarea, setDescripcionTarea] = useState('');
-//Manejador del evento cuando el input cambia de valor
-    const refInput = useRef(); 
-    const cambioEntradaHandler = (event) => {
-        setDescripcionTarea(event.target.value);
-        console.log(descripcionTarea);
-    }
-    const agregarTareaHandler = (event) => {
-    event.preventDefault();
-      const nuevaTarea = {
-        id: uuidv4(),
-        texto: refInput.current.value,
-        completada: false
-      };
-    //props.onSubmit(nuevaTarea)
-      const nuevoArrTareas = { nuevaTarea, ...arrTareas };
-      setArrTareas(nuevoArrTareas); //PENDIENTE
-      //arrTareas.push(nuevaTarea);
-      console.log(arrTareas);
+  // ACCEDE al contexto
+  const [ , , agregarTarea] = useContext(ContextoTareas); // se pone así por que es un arreglo de context
+
+  // Estado del input
+  const [descripcionTarea, setDescripcionTarea] = useState("");
+  
+  const cambioEntradaHandler = (event) => {
+    setDescripcionTarea(event.target.value);
+    console.log(descripcionTarea);
   };
-  
-   
-    return (
-      <form className="tarea-forma" onSubmit={agregarTareaHandler}>
-            <input
-            ref={refInput}
-            className="tarea-input"    
-            type="text"
-            placeholder="Escibe la nueva tarea"
-            name="texto"
-            />
-            {cambioEntradaHandler}
-        <button className="tarea-boton">Agregar tarea</button>
-  
-      </form>
-    );
+
+  const agregarTareaHandler = (event) => {
+    event.preventDefault();
+    const nuevaTarea = {
+      id: uuidv4(),
+      texto: refInput.current.value,
+      completada: false
+    };
+    agregarTarea(nuevaTarea);
+  };
+
+  // Hook de referencia
+  const refInput = useRef();
+
+  return <form className="tarea-forma" onSubmit={agregarTareaHandler}>
+    <input 
+    ref={refInput}
+    className="tarea-input"
+    type="text"
+    placeholder="Escribe la nueva tarea"
+    name="texto"
+    onChange={cambioEntradaHandler}
+    />
+
+    <button className="tarea-boton">
+    Agregar tarea
+    </button>
+  </form>;
 };
-  
+
 export default CapturaTarea;

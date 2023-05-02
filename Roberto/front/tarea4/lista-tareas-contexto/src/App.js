@@ -1,18 +1,17 @@
-import './styles/App.css';
-import ListaTareas from './components/ListaTareas';
-import { createContext } from 'react';
-import ProovedorTareas from './components/ProovedorTareas';
+import { createContext } from "react";
+import "./styles/App.css";
+import ListaTareas from "./components/ListaTareas";
+import ProveedorTareas from "./components/ProveedorTareas";
 
-
-// Crear el contexto global
+// Crear el contexto (Zona GLOBAL)
 export const ContextoTareas = createContext();
 
 function App() {
   return (
     <div className="App">
-      <ProovedorTareas>
+      <ProveedorTareas>
         <ListaTareas />
-      </ProovedorTareas>
+      </ProveedorTareas>
     </div>
   );
 }
